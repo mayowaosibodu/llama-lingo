@@ -1,0 +1,9 @@
+azure-ai-inference
+streamlit
+watchdog
+
+llama-index-embeddings-azure-openai
+llama-index-llms-azure-openai
+llama-index
+
+googletrans==3.1.0a0
