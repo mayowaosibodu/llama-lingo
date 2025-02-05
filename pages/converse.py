@@ -8,13 +8,13 @@ from googletrans import Translator
 
 vision_client = ChatCompletionsClient(
     endpoint="https://Llama-3-2-11B-Vision-Instruct-ga.swedencentral.models.ai.azure.com",
-    credential=AzureKeyCredential("credential"),
+    credential=AzureKeyCredential(st.secrets["llama_vision_key"]),
 )
 
 
 text_client = ChatCompletionsClient(
     endpoint="https://Meta-Llama-3-1-70B-Instruct-brjk.swedencentral.models.ai.azure.com",
-    credential=AzureKeyCredential("credential"),
+    credential=AzureKeyCredential(st.secrets["llama_llm_key"]),
 )
 
 @st.cache_data
